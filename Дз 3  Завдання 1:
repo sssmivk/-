@@ -1,0 +1,25 @@
+
+class Tvaryna:
+    def __init__(self, imya, vik):
+        self.imya = imya
+        self.vik = vik
+
+    def zvuk(self):
+        print("Тварина видає звук")
+
+class Sobaka(Tvaryna):
+    def zvuk(self):
+        print(f"{self.imya} каже: Гав-гав!")
+
+
+class Kit(Tvaryna):
+    def zvuk(self):
+        print(f"{self.imya} каже: Няв-няв!")
+
+
+mij_sobaka = Sobaka("Бобік", 5)
+mij_kit = Kit("Мурчик", 3)
+
+
+mij_sobaka.zvuk()
+mij_kit.zvuk()
